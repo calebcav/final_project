@@ -1,24 +1,23 @@
-
-INSERT INTO Sailors
-  (name, age, experience)
+INSERT INTO HOUSE (name, price, address, aid, rent, status)
 VALUES
-  ('john', 32, 5),
-  ('jane', 22, 3),
-  ('janie', 45, 17);
-
-INSERT INTO Boats
-  (name, color)
+  (
+    'Pineapple',
+    10000,
+    'Bikini Bottom',
+    1,
+    0,
+    'active'
+  ),
+  (
+    'Rock',
+    14141,
+    'Bikini Bottom',
+    1,
+    0,
+    'pending'
+  ),
+  ('Statue', 0, 'Bikini Bottom', 1, 1, 'closed');
+INSERT INTO USER (name, phoneNumber, email)
 VALUES
-  ('Water Bug', 'blue'),
-  ('Sundance', 'green'),
-  ('Moonrise', 'red');
-
-INSERT INTO Voyages
-  (sid, bid, date_of_voyage)
-VALUES
-  (1, 1, '2020-02-01'),
-  (1, 2, '2020-02-02'),
-  (1, 3, '2020-02-03'),
-  (2, 1, '2020-02-02'),
-  (2, 1, '2020-02-03'),
-  (3, 3, '2020-02-01');
+  ('Caleb', '911', 'lol@hotmail.com'),
+  ('Bryan', '14904190', 'naona@yahoo.com');

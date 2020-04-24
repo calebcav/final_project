@@ -3,22 +3,18 @@
     <title>index of svb project</title>
   </head>
   <body>
-    <h1>Operations</h1>
+    <h1>Come add a House Here</h1>
     <ol>
-      <li><a href="/sailors/add">add a sailor</a></li>
-      <li><a href="/boats/add">add a boat</a></li>
-      <li><a href="/voyages/add">add a voyage</a></li>
+      <li><a href="/add-house">add house</a></li>
     </ol>
     <h1>Views</h1>
     <ol>
-      <li><a href="/sailors">sailors</a></li>
-      <li><a href="/boats">boats</a></li>
-      <li><a href="/voyages">voyages</a></li>
+      <li><a href="/all-houses">all houses</a></li>
       <li>
-        <form action="/sailors/who-sailed" method=POST>
-          <label>boat name</label>
-          <input name="boat-name" type="text"/>
-          <input type="submit" value="sailors who sailed boat"/>
+        <form action="/agent-houses" method=POST>
+          <label>agent name</label>
+          <input name="agent-name" type="text"/>
+          <input type="submit" value="houses by this agent's name"/>
         </form>
       </li>
       <li>
@@ -42,7 +38,7 @@
           <input type=submit value="sailors who sailed on boat of color"/>
         </form>
       </li>
-      <li><a href="/boats/by-popularity">boats by popularity</a></li>
+      <li><a href="/most-popular-houses">most popular houses</a></li>
       <form method=POST>
       </form>
     </ol>
