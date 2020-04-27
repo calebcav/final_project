@@ -3,13 +3,18 @@
     <title>index of svb project</title>
   </head>
   <body>
-    <h1>Come add a House Here</h1>
+    <h1>Come add stuff here</h1>
     <ol>
-      <li><a href="/add-house">add house</a></li>
+      <li><a href="/add-house">sell house</a></li>
+      <li><a href="/add-purchase">buy house</a></li>
+      <li><a href="/add-interests">add interest</a></li>
+      <li><a href="/add-user">add user</a></li>
     </ol>
-    <h1>Views</h1>
+    <h1>Come Search for a House Here</h1>
     <ol>
       <li><a href="/all-houses">all houses</a></li>
+      <li><a href="/all-agents">all agents</a></li>
+      <li><a href="all-users">all users</a></li>
       <li>
         <form action="/agent-houses" method=POST>
           <label>agent name</label>
@@ -18,26 +23,22 @@
         </form>
       </li>
       <li>
-        <form action="/boats/sailed-by" method=POST>
-          <label>sailor name</label>
-          <input name="sailor-name" type="text"/>
-          <input type=submit value="boats sailed by"/>
+      <form action="/user-purchases" method=POST>
+          <label>user purchases</label>
+          <input name="user-name" type="text"/>
+          <input type="submit" value="houses by this agent's name"/>
         </form>
       </li>
       <li>
-        <form action="/sailors/who-sailed-on-date" method=POST>
-          <label>date</label>
-          <input name="date", type="text"/>
-          <input type=submit value="sailors who sailed on date"/>
-        </form>
-      </li>
-      <li>
-        <form action="/sailors/who-sailed-on-boat-of-color" method=POST>
-          <label>color</label>
-          <input name="color" type="text"/>
-          <input type=submit value="sailors who sailed on boat of color"/>
-        </form>
-      </li>
+      <label>Search for houses</label>
+      <form method=POST action="/search-houses">
+      Price:<input name="price" type="text"/>
+      City:<input name="city" type="text"/>
+      Agent Name: <input name="agent" type="text"/>
+      Rent: <input type="checkbox"name="rent" value=1>
+      <input type="submit" value="search" href="/search-houses"/>
+      </form>
+    </li>
       <li><a href="/most-popular-houses">most popular houses</a></li>
       <form method=POST>
       </form>
